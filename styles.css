@@ -1,0 +1,617 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--Black);
+    font-family: "Raleway", sans-serif;    
+}
+
+:root {
+    --Blue-Deep: #16222A;
+    --Gray: #2F2F2F;
+    --Light-Gray: #8E8A8A;
+    --Black: #121212;
+    --White: #FFFFFF;
+    --Red-Deep: #FF416C;
+    --Blue: #5496ed;
+}
+
+
+/* Estilos de la etiqueta header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+/* Estilos relacionados con el navbar */
+.navbar {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--Blue-Deep);
+    border-bottom: solid 1px var(--Gray);
+}
+
+.name {
+    font-weight: bold;
+    color: var(--White)
+}
+
+.Rd {
+    font-weight: bold;  
+    color: var(--Red-Deep)
+}
+
+.menu-container {
+    display: flex;
+    color: var(--White)
+}
+
+.menu-container li:nth-child(1),
+.menu-container li:nth-child(2),
+.menu-container li:nth-child(3),
+.menu-container li:nth-child(4) {
+    display: none;
+}
+/* --- */
+
+
+/* Estilos del main */
+main {
+    margin-top: 28px;
+}
+
+/* Estilos relacionados con el contenedor de introducción */
+.container-introduction {
+    background: linear-gradient(to bottom, #16222A, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 97vh;
+    padding: 0 18px;
+}
+
+.container-presentantion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px; 
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;    
+    text-align: center;
+    margin: 0 10px 10px 0;
+}
+
+.dark {
+    color: var(--Gray);   
+}
+
+.container-img {
+    width: 15rem;
+    background: var(--White);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-img img{
+    width: 100%;
+    display: block;
+}
+
+.descrip {
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--White);
+    text-align: justify;
+}
+
+.links-networking {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 48px 0;
+}
+
+.icons {
+    width: 40px;
+}
+
+.dwld-cv {
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+    width: 10rem;
+    height: 3rem; 
+    border-radius: 12px; 
+    margin: 0 auto;    
+    color: var(--White);
+    font-size: 15px;
+}
+/* --- */
+
+
+
+/* Estilos relacionados con el contenedor acerca de*/
+.container-aboutme {
+    padding: 24px 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, transparent, #16222A);
+}
+
+.subtitle {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--Red-Deep);    
+    text-align: left;
+    margin: 0 10px 10px 0;     
+
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;  
+    animation: blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.container-aboutme p {
+    text-align: justify;
+    color: var(--White)
+}
+
+.arrow {
+    margin: 48px auto 0 auto;
+    height: 30px;
+    width: 0;
+    border: solid 2px var(--White);
+}
+
+/* --- */
+
+
+
+/* Estilos relacionados con el contenedor de skills */
+.container-skills {
+    padding: 24px 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #16222A, transparent);
+}
+
+.container-skills h1 {
+    margin-bottom: 14px;
+}
+
+.container-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px
+}
+
+.card-skill {
+    width: 136px;
+    height: 114px;
+    padding: 0 0 20px 20px;
+    margin: 14px 0;
+    background-color: var(--Gray);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.img-skills {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.text-skill {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--White);
+}
+/* --- */
+
+
+/* Estilos relacionados con el contenedor de estudios */
+.container-study {
+    padding: 24px 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, transparent, #16222A);
+}
+
+.container-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 14px;
+    gap: 60px
+}
+
+.card-education {
+    width: 296px;
+    height: 178px;
+    background: white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-study {
+    width: 160px;
+}
+
+.descrip-study-title {
+    color: var(--White);
+    align-self: self-start;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descrip-study-subtitle {
+    color: var(--White);
+    align-self: self-start;
+}
+
+
+
+/* Estilos relacionados con el contenedor trabajos*/
+.container-works {
+    padding: 24px 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #16222A, transparent);
+}
+
+.container-studies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 14px;
+    gap: 60px
+}
+
+.card-works {
+    width: 328px;;
+    height: 178px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-works {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px
+}
+
+.btn-repositorie {
+    width: 108px;
+    height: 40px;
+    margin-top: 24px;
+    padding: 4px 14px;
+    color: var(--Red-Deep);
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid var(--Red-Deep);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-demo {
+    width: 108px;
+    height: 40px;
+    margin-top: 24px;
+    padding: 4px 14px;
+    color: var(--White);
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--Red-Deep);
+    border: 3px solid var(--Red-Deep);  
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos relacionados con el contenedor de contacto*/
+.container-contact {
+    margin-top: 54px;
+    padding: 24px 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, transparent, #16222A);
+}
+
+.subtitle-contact {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--Red-Deep);    
+    text-align: left;
+    margin: 0 10px 10px 0;  
+}
+
+form {
+    width: 100%;
+}
+
+.input {
+    height: 56px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;    
+    position: relative;
+}
+
+form .input:nth-child(4) {
+    height: 133px;
+}
+
+.indicator {
+    position: absolute;
+    font-size: 13px;
+    padding: 10px 0 0 14px;
+    color: var(--Light-Gray);
+}
+
+.input-text {
+    height: 56px;
+    border-radius: 5px;
+    padding: 18px 13px 0 13px;
+    background: var(--Gray);
+    color: var(--White);
+    font-size: 17px;
+    border-bottom: 4px solid gray;
+    outline: none;
+}
+
+.input-text:focus {
+    border-bottom: 4px solid var(--Blue);
+    caret-color: var(--Blue);
+}
+
+.input-text:focus + .indicator {
+    color: var(--Blue);
+}
+
+.input-text:focus .indicator {
+    color: var(--Blue);
+}
+
+.input-area {    
+    border-radius: 5px;
+    padding: 26px 13px 0 13px;
+    resize: none;
+    background: var(--Gray);
+    color: var(--White);
+    font-size: 17px;
+    border-bottom: 4px solid gray;
+    outline: none;
+}
+
+.input-area:focus {
+    border-bottom: 4px solid var(--Blue);
+    caret-color: var(--Blue);
+}
+
+.input-area:focus + .indicator {
+    color: var(--Blue)
+}
+
+.enviar {
+    width: 108px;
+    height: 40px;
+    margin-top: 24px;
+    padding: 4px 14px;
+    color: var(--White);
+    font-size: 18px;
+    background: var(--Red-Deep);
+    border: 3px solid var(--Red-Deep);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --- */
+
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    background: #16222A;
+}
+
+footer p {
+    color: var(--White);
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Final del footer */
+
+/* ANIMACIONES */
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* --- */
+
+
+/* Medias Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Estilos del header */
+    .navbar {
+        height: 64px;
+    }
+
+    .navbar p {
+        font-size: 20px;
+    }
+
+    .menu-container {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* Final de estilos del header */
+
+
+    /* Estilos del main */
+    .container-presentantion {
+        flex-direction: column-reverse;
+        gap: 20px
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .descrip {
+        padding: 0 110px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icons {
+        width: 60px;
+    }
+
+    .dwld-cv {
+        width: 14rem;
+        height: 4rem;
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        align-self: center;
+    }
+
+
+    /* Estilos del contenerdor acerca de */
+    .container-aboutme p {
+        font-size: 20px;
+    }
+
+    .arrow {
+        height: 50px;
+    }
+
+
+    /* Estilos del contenerdor skills */
+    .card-skill {
+        width: 158px;
+        height: 134px;
+    }
+
+    .img-skills {
+        width: 50px;
+    }
+
+    .text-skill {
+        font-size: 20px;
+    }
+
+
+    /* Estilos del contenerdor formación */
+    .container-studies{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card-education {
+        width: 224px;
+        height: 169px;
+        
+    }
+
+    .img-study {
+        width: 120px;
+    }
+
+
+    /* Estilos del contenerdor trabajos */
+    .container-info > div{
+        width: 100%;
+    }
+
+    .card-works {
+        width: auto;
+        height: auto;
+    }
+
+    .descrip-study-title {
+        font-size: 20px;
+    }
+
+    .descrip-study-subtitle {
+        font-size: 18px;
+    }
+
+    .btn-repositorie, .btn-demo {
+        width: 128px;
+        height: 50px;
+    }
+
+
+    /* Estilos del contenedor contacto */
+    .container-contact {
+        margin: 0;
+    }
+
+    .subtitle-contact {
+        align-self: center;
+        font-size: 2rem;
+    }
+}
