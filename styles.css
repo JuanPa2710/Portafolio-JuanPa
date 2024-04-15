@@ -615,3 +615,161 @@ footer p {
         font-size: 2rem;
     }
 }
+
+
+@media (min-width: 1025px) { 
+    /* Estilos del header */
+    .navbar {
+        height: 64px;
+    }
+
+    .navbar p {
+        font-size: 20px;
+    }
+
+    .menu-container {
+        font-size: 16px;
+        display: flex;
+        gap: 40px;        
+    }
+
+    .menu-container li:nth-child(5) {
+        font-weight: bold;
+    }
+
+    .menu-container li:nth-child(1),
+    .menu-container li:nth-child(2),
+    .menu-container li:nth-child(3),
+    .menu-container li:nth-child(4) {
+    display: block;
+    }   
+
+    .menu-container li:hover {
+        color: var(--Red-Deep)
+    }
+    
+    /* Final de estilos del header */
+
+
+    /* Estilos del main */
+    .arrow {
+        display: none;
+    }
+
+    .container-presentantion {
+        flex-direction: column-reverse;
+        gap: 20px
+    }
+
+    .descrip {
+        padding: 0 30%;
+        text-align: center
+    }
+
+    .links-networking {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .icons {
+       width: 60px;
+    }
+
+    /* Estilos contenedor acerca de */
+    .subtitle{
+        font-size: 2.2rem;
+        align-self: center;
+    }
+
+    .container-aboutme {
+        padding: 100px 0 0 0;
+        height: 60vh;
+    }
+
+    .container-aboutme p {
+        margin: 0 200px;
+        text-align: center;
+    }
+
+    /* Estilos del contenedor de skills */
+    .container-skills {
+        padding: 100px 0 0 0;
+        height: 60vh;
+    }
+
+    .card-skill {
+        width: 178px;
+        height: 174px;
+    }
+
+
+    /* Estilos del contenedor de estudios */
+    .container-study {
+        padding: 100px 0 0 0;
+    }
+
+    .container-studies {        
+        height: 60vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .container-studies > div {
+        width: 368px;
+        height: 286px;
+    }
+
+    .card-education {
+        width: auto;
+        height: 222px;
+    }
+
+    /* Contenedor de trabajos realizados */
+    /* Estilos del contenerdor trabajos */
+    .container-works {
+        padding: 100px 0 0 0;
+        height: 90vh;
+    }
+
+    .container-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-info > div{
+        width: 40%;
+    }
+
+    .card-works {
+        width: auto;
+        height: auto;
+    }
+
+    .descrip-study-title {
+        font-size: 20px;
+    }
+
+    .descrip-study-subtitle {
+        font-size: 18px;
+    }
+
+    .btn-repositorie, .btn-demo {
+        width: 128px;
+        height: 50px;
+    }
+
+    /* Estilos de contenedor contacto */
+    .subtitle-contact {
+        font-size: 2.3rem;
+        align-self: center;
+    }
+
+    form > div{
+        padding: 0 200px;
+    }
+
+    form > .enviar {
+        margin: 0 200px;
+    }
+}
